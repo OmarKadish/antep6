@@ -13,5 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/hakkimda', 
-[\App\Http\Controllers\HomeController::class, 'ShowView']);
+Route::get('/', function () {
+    return view('welcome');});
+
+Route::get('/hakkimda',
+    [\App\Http\Controllers\HomeController::class, 'ShowUsers']);
+
+Route::get('/urunler',
+    [\App\Http\Controllers\HomeController::class, 'ShowProducts']);
