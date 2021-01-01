@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    use HasFactory;
+    protected $table='products';
+    protected $fillable=['name','price','owner','photo','description','created_by'];
+
+    //ilişki olduğu alanlar.
+    public function user(){
+        return $this->hasMany('App/Models/User', 'id','created_by');
+    }
 }

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\User;
 use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
@@ -19,12 +20,14 @@ class HomeController extends Controller
         return view('users.create');
     }
     function showUsers() {
-        $users = DB::table('users')->get();
-        return view('Hakkimda', compact( 'users'));
+        //$users = DB::table('users')->get();
+        $users= User::all();
+        return view('hakkimda', compact( 'users'));
     }
+
     function showProducts() {
-        $Products = DB::table('Products')->get();
-        return view('urunler', compact( 'Products'));
+        $Products = DB::table('products')->get();
+        return view('products', compact( 'Products'));
     }
 
 }
