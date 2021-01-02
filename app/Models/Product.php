@@ -12,6 +12,6 @@ class Product extends Model
 
     //ilişki olduğu alanlar.
     public function user(){
-        return $this->hasMany('App/Models/User', 'id','created_by');
+        return $this->hasMany('App\Models\User', 'id','created_by');
     }
 }

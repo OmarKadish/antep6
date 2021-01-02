@@ -25,3 +25,4 @@ Route::get('/urunler',
 
 Route::get('/create-product', [\App\Http\Controllers\ProductController::class, 'create'])->name('product.create');
 Route::post('/save-product', [\App\Http\Controllers\ProductController::class,'store'])->name('product.save');
+Route::get('/show-product', [\App\Http\Controllers\ProductController::class, 'index']);
