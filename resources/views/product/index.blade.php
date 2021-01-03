@@ -1,43 +1,125 @@
-<html>
-<head>
-    <style>
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
+@extends('Layouts.index-master')
 
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
+@section('featured')
+    <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+        <div class="featured__item">
+            <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
+                <ul class="featured__item__pic__hover">
+                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+            <div class="featured__item__text">
+                <h6><a href="#">Kuşbaşı</a></h6>
+                <h5>$30.00</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+        <div class="featured__item">
+            <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
+                <ul class="featured__item__pic__hover">
+                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+            <div class="featured__item__text">
+                <h6><a href="#">Muz</a></h6>
+                <h5>$30.00</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+        <div class="featured__item">
+            <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
+                <ul class="featured__item__pic__hover">
+                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+            <div class="featured__item__text">
+                <h6><a href="#">Domates</a></h6>
+                <h5>$30.00</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+        <div class="featured__item">
+            <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg">
+                <ul class="featured__item__pic__hover">
+                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+            <div class="featured__item__text">
+                <h6><a href="#">Karpuz</a></h6>
+                <h5>$30.00</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+        <div class="featured__item">
+            <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-5.jpg">
+                <ul class="featured__item__pic__hover">
+                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+            <div class="featured__item__text">
+                <h6><a href="#">Üzüm</a></h6>
+                <h5>$30.00</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+        <div class="featured__item">
+            <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-6.jpg">
+                <ul class="featured__item__pic__hover">
+                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+            <div class="featured__item__text">
+                <h6><a href="#">Hamburger</a></h6>
+                <h5>$30.00</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+        <div class="featured__item">
+            <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-7.jpg">
+                <ul class="featured__item__pic__hover">
+                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+            <div class="featured__item__text">
+                <h6><a href="#">Mango</a></h6>
+                <h5>$30.00</h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+        <div class="featured__item">
+            <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-8.jpg">
+                <ul class="featured__item__pic__hover">
+                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+            <div class="featured__item__text">
+                <h6><a href="#">Elma</a></h6>
+                <h5>$30.00</h5>
+            </div>
+        </div>
+    </div>
 
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-    </style>
-</head>
-<body>
-<h2 style="text-align: center">Ürünler</h2>
-
-<table>
-    <tr>
-        <th>ID</th>
-        <th>Adı</th>
-        <th>Fiyatı</th>
-        <th>Ekleyen</th>
-    </tr>
-
-    @foreach($products as $product)
-        <tr>
-            <td>{{$product->id}}</td>
-            <td>{{$product->name}}</td>
-            <td>{{$product->price}}</td>
-            <td>{{$product->user[0]->name}}</td>
-        </tr>
-    @endforeach
-</table>
-
-</body>
-</html>
+@endsection

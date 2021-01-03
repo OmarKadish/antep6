@@ -15,7 +15,7 @@ use App\Http\Controllers;
 */
 
 Route::get('/', function () {
-    return view('welcome');});
+    return view('Layouts.index-master');});
 
 Route::get('/hakkimda',
     [\App\Http\Controllers\HomeController::class, 'ShowUsers']);
